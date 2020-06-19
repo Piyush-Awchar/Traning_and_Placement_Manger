@@ -1,0 +1,25 @@
+if(i==1) { %>
+            <script>
+                   
+            </script>
+            <br><br>
+            <%
+           
+            HttpSession session = request.getSession();
+            session.setAttribute("username",uname);
+            
+            out.print("<h1> Welcome "+fname+" "+name+" </h1> "); 
+            
+            %>
+            <input class="button" type="button" value="Update Your info" onclick="onc()" required>
+            <input class="button" type="button" value="Notifications" onclick="onc2()" required><br>
+        <%
+        }
+        else{ %>
+             <script>
+                alert("Hey You Forgott something want to try again") </script>
+                    <%
+                    response.sendRedirect("loginfail.html");
+                    //window.loacation ="index.html";
+         }
+	}

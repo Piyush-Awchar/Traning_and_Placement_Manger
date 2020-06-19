@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <script>
+            
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/indexp.css">
+
+    </head>
+    <body>
+        <center>
+            <div class="back">
+                <div class="img">
+                    <img src="slogo.png">
+                </div>
+            </div>
+            <div class="head">
+                <a href="index.html"> <b class="he" id="hp">Home Page</b>
+                    <a href="aboutus.html"> <b class="he" id="au">About us</b> </a>
+                    <a href="contactus.html"> <b class="he" id="co">Contact us</b> </a>
+                    <a href="signup.html"> <b class="he" id="su">Sign up</b> </a>
+            </div>
+            <form name="form1" onsubmit="" method="POST" action="studinfo.jsp">
+                <fieldset>
+                    <legend align=left>Student Login</legend>
+            <b>USERNAME :</b> <input class="txt" type="text" name="user" required><br><br>
+            <b>PASSWORD :</b> <input class="txt" type="password" name="pass" required><br><br>
+
+            <input class="button" type="reset" value="Reset" required>
+            <input class="button" type="submit" value="Submit" required><br>
+            <p id="e_msg"></p>
+                </fieldset>
+        </form>
+        <p id="signup">Don't Have an Account <a href="signup.html"> <b> create an Account</b> </a> </p>
+        </center>
+    </body>
+</html>

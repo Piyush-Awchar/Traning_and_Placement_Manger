@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Sign Up</title>
+    <script src="">
+        
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/indexp.css">
+</head>
+
+<body>
+    <center>
+        <div class="back">
+            <div class="img">
+                <img src="slogo.png">
+            </div>
+        </div>
+        <div class="head">
+            <a href="index.html"> <b class="he" id="hp">Home Page</b>
+                <a href="aboutus.html"> <b class="he" id="au">About us</b> </a>
+                <a href="contactus.html"> <b class="he" id="co">Contact us</b> </a>
+                <a href="signup.html"> <b class="he" id="su">Sign up</b> </a>
+        </div>
+        <form name="form1"  onclick="check_user()" onsubmit="return check()" method="POST" action="sample.jsp">
+            <fieldset>
+                <legend align=left>Sign up</legend>
+                <table>
+    <!--    <tr><td><b id="a">Who are you :</b> </td> 
+            <td><input type="radio" name="mode" value="admin">Admin
+                <input type="radio" name="mode" value="student">Student</td> </tr> -->
+                <br><br>
+        <tr>    <td><b>First NAME :</b> </td>  <td><input class="txt" type="text" name="fname" title="Enter your First Name" required><br><br></td></tr>
+        <tr>    <td><b>Last NAME  :</b></td><td>   <input class="txt" type="text" name="lname" title="Enter your Last Name" required><br><br></td></tr>
+    <!--    <tr>    <td><b id="usr_mode">GR No      :</b></td><td> <input class="txt" type="number" name="no" required><br><br></td></tr>-->
+        <tr>    <td><b>E-mail     :</b> </td>  <td><input class="txt" type="email" name="mail" required><br><br></td></tr>
+        <tr>    <td><b>Mob No     :</b> </td>  <td><input class="txt" type="number" name="cno" required><br><br></td></tr>
+        <tr>    <td><b>USERNAME   :</b> </td><td>  <input class="txt" type="text" name="user" required><br><br></td></tr>
+        <tr>    <td><b>PASSWORD   :</b> </td><td>  <input class="txt" type="password" name="pass"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must Contain one smallcase letter one capital n along with number minimun length 8 chars" required><br><br></td>
+        </tr>
+              
+        <tr>
+            <td><input class="button" type="reset" value="Reset" required></td>
+            <td><input class="button" type="submit" value="Submit" required><br></td>
+        </tr>     
+    
+            </table>
+            </fieldset>
+        </form>
+        <p id="signup">Have an Account <a href="index.html"> <b> Login </b> </a> </p>
+    </center>
+</body>
+</html>
